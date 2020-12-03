@@ -17,7 +17,7 @@
         android:id="@+id/speciality"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="34sp"
+        android:textSize="28sp"
         android:text="Select speciality"
         android:textColor="#fff"
         android:gravity="center"

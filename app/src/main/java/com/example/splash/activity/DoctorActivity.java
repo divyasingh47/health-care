@@ -28,6 +28,12 @@ public class DoctorActivity extends AppCompatActivity implements View.OnClickLis
         cardiologist.setOnClickListener(this);
         Button gynecologist = (Button) findViewById(R.id.btngyn);
         gynecologist.setOnClickListener(this);
+        Button neurologist = (Button) findViewById(R.id.btnneuro);
+        neurologist.setOnClickListener(this);
+        Button psychiatrist = (Button) findViewById(R.id.btnpsy);
+        psychiatrist.setOnClickListener(this);
+        Button general = (Button) findViewById(R.id.btngeneral);
+        general.setOnClickListener(this);
     }
 
     @Override
