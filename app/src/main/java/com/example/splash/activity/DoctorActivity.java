@@ -60,7 +60,6 @@ public class DoctorActivity extends AppCompatActivity implements View.OnClickLis
                 intent = new Intent(DoctorActivity.this, DisplayActivity.class);
                 intent.putExtra("displayEntityList", entities);
                 startActivity(intent);
-                finish();
                 break;
             default:
                 break;

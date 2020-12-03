@@ -3,6 +3,7 @@
     package="com.example.splash">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".activity.DisplayActivity"></activity>
-        <activity android:name=".activity.DoctorActivity" />
+
+        <activity android:name=".activity.DisplayActivity"/>
+
+        <activity android:name=".activity.DoctorActivity" android:parentActivityName=".activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.splash.activity.HomeActivity" />
+        </activity>
+
         <activity android:name=".activity.HomeActivity" />
 
         <meta-data
@@ -24,6 +32,7 @@
             android:label="@string/title_activity_map"
             android:theme="@style/Theme.Splash.NoActionBar" />
         <activity android:name=".locationPermission" />
+
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

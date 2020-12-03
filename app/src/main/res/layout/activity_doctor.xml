@@ -8,21 +8,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         android:orientation="vertical"
-        android:gravity="center"
-        android:background="@drawable/bg">
-
+        android:gravity="top"
+        android:background="@drawable/speciality">
 
     <TextView
         android:id="@+id/speciality"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="34sp"
-        android:text="Speciality"
-        android:textColor="#ffffff"
+        android:text="Select speciality"
+        android:textColor="#fff"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:paddingLeft="24dp"
+        android:paddingStart="24dp"
         />
     </LinearLayout>
 
@@ -33,39 +34,36 @@
         android:layout_marginTop="215dp"
         android:layout_marginLeft="10dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp">
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/general"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hospital"
+                        android:src="@drawable/gp"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="General Practitioner"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/general"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -78,12 +76,7 @@
                         android:background="#00000000"
                         android:shadowColor="#000000"
                         app:backgroundTint="#00000000" />
-
-
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -92,27 +85,25 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_marginRight="5dp">
-
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/doctor"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/doctor"
+                        android:src="@drawable/dentist"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dentist"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/doctor"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -124,53 +115,40 @@
                         android:layout_height="match_parent"
                         android:background="@color/black"
                         app:backgroundTint="#00000000" />
-
-
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
-
-
-
-
-
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp">
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/doctorOrHospital"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/gyn"
+                        android:src="@drawable/gyno"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gynecologist"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/doctorOrHospital"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -183,12 +161,7 @@
                         android:background="#00000000"
                         android:shadowColor="#000000"
                         app:backgroundTint="#00000000" />
-
-
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -197,27 +170,25 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_marginRight="5dp">
-
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/neuro"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/doctor"
+                        android:src="@drawable/neuro"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Neurologist"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/neuro"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -229,53 +200,40 @@
                         android:layout_height="match_parent"
                         android:background="@color/black"
                         app:backgroundTint="#00000000" />
-
-
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
-
-
-
-
-
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="135dp"
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp">
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/cardio"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/gyn"
+                        android:src="@drawable/cardio"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cardiologist"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/cardio"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -288,12 +246,7 @@
                         android:background="#00000000"
                         android:shadowColor="#000000"
                         app:backgroundTint="#00000000" />
-
-
                 </RelativeLayout>
-
-
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -302,27 +255,25 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_marginRight="5dp">
-
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
                         android:id="@+id/psyc"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/doctor"
+                        android:src="@drawable/psycho"
                         android:layout_centerInParent="true"/>
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Psychiatrist"
-                        android:textSize="16sp"
+                        android:textSize="12sp"
                         android:layout_below="@+id/psyc"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
@@ -334,13 +285,8 @@
                         android:layout_height="match_parent"
                         android:background="@color/black"
                         app:backgroundTint="#00000000" />
-
                 </RelativeLayout>
-
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

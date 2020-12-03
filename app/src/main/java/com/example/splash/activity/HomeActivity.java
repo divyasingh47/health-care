@@ -36,7 +36,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btndoctor:
                 intent = new Intent(HomeActivity.this, DoctorActivity.class);
                 startActivity(intent);
-                finish();
                 break;
             case R.id.btnhospital:
                 RequestHandlerService handlerService = new RequestHandlerService();
@@ -52,7 +51,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(HomeActivity.this, DisplayActivity.class);
                 intent.putExtra("displayEntityList", entities);
                 startActivity(intent);
-                finish();
                 break;
             default:
                 break;
